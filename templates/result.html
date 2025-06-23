@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View your generated ASCII art.">
+    <title>ASCII Art Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="/static/icon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/static/icon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/static/icon/site.webmanifest">
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-gray-600 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold">ASCII Art Result</h1>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <section class="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+            <h2 class="text-xl font-semibold mb-4">Your ASCII Art</h2>
+            <pre class="whitespace-pre bg-gray-900 text-white p-4 rounded-md overflow-x-auto">{{ .Art }}</pre>
+            <button><a href="/" class="inline-block mt-4 text-gray-600 hover:text-gray-800 font-medium">← Back to Home</a></button>
+        </section>
+    </main>
+</body>
+</html>

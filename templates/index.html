@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate professional ASCII art with customizable banner styles.">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="/static/icon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/static/icon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/static/icon/site.webmanifest">
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-gray-600 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4">
+            <a href="/"><h1 class="text-2xl font-bold">ASCII Art Generator</h1></a>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <section class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+            <h2 class="text-xl font-semibold mb-4">Create Your ASCII Art</h2>
+            <form action="/ascii-art" method="POST" class="space-y-4">
+                <div>
+                    <label for="text" class="block text-sm font-medium text-gray-700">Enter Text:</label>
+                    <textarea id="text" name="text" rows="5" placeholder="Type Something" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-gray-500 focus:border-gray-500" ></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Select Banner Style:</label>
+                    <div class="mt-2 space-y-2">
+                        <div>
+                            <input type="radio" id="standard" name="banner" value="standard" class="mr-2" checked>
+                            <label for="standard" class="text-gray-700">Standard</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="shadow" name="banner" value="shadow" class="mr-2">
+                            <label for="shadow" class="text-gray-700">Shadow</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="thinkertoy" name="banner" value="thinkertoy" class="mr-2">
+                            <label for="thinkertoy" class="text-gray-700">Thinkertoy</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-200">Generate ASCII Art</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
