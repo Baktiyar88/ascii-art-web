@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ascii-art-web-stylize/web"
+	"ascii-art-web-dockerize/web"
 	"log"
 	"net/http"
 	"os"
