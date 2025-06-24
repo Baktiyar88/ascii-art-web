@@ -21,5 +21,5 @@ COPY static /app/static
 COPY templates /app/templates
 COPY banners /app/banners
 
-EXPOSE 8080
+EXPOSE 7777
 CMD ["./main"]

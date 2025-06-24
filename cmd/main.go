@@ -46,8 +46,8 @@ func main() {
 		http.ServeFile(w, r, fullPath)
 	})
 
-	log.Println("Starting at this server: http://localhost:8080")
-	if err := http.ListenAndServe(":8080", mux); err != nil {
+	log.Println("Starting at this server: http://localhost:7777")
+	if err := http.ListenAndServe(":7777", mux); err != nil {
 		log.Fatalf("Server failed: %v", err)
 	}
 }
