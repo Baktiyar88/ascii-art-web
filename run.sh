@@ -7,4 +7,4 @@ echo "🔨 Building Docker image..."
 docker build -t $IMAGE_NAME .
 
 echo "🚀 Running Docker container..."
-docker run -p 8080:8080 --rm $IMAGE_NAME
+docker run -p 7777:7777 --rm $IMAGE_NAME
