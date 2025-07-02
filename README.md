@@ -1,16 +1,15 @@
-# ASCII Art Web Generator
+# ASCII Art Web dockerize
 
-A simple web application written in Go that generates professional ASCII art from user input using customizable banner styles. The project is containerized with Docker following best practices, allowing seamless build and deployment.
+This project demonstrates the containerization of a Go web server that provides ASCII art generation functionality. The application is fully dockerized following Docker best practices and good coding standards.
 
-## Features
+##  Features
 
-- Generate ASCII art from any text input
-- Support for three banner styles: **standard**, **shadow**, **thinkertoy**
-- Robust input validation (ASCII characters only)
-- Custom error pages for 404, 400, 500 statuses
-- Static assets (CSS, icons) served via `/static`
-- Containerized with a multi-stage Dockerfile for a minimal final image
-- Helper scripts to automate Docker image build, container run, and cleanup
+- **Web Interface**: Clean, responsive HTML interface
+- **Multiple Fonts**: Support for different ASCII art styles
+- **Error Handling**: Proper validation and error messages
+- **Containerized**: Fully dockerized application
+- **Optimized**: Multi-stage Docker build for minimal image size
+- **Secure**: Non-root user execution inside container
 
 ## Prerequisites
 
@@ -90,7 +89,4 @@ bash cleanup.sh
 - Clear project structure separating handlers, helpers, and templates
 - Comprehensive error handling and user-friendly error pages
 
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
