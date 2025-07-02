@@ -11,6 +11,10 @@ RUN chmod +x /app/main
 
 # Этап выполнения
 FROM alpine:latest
+LABEL maintainers="Baktiyar <bzhaksyb>, Bek <bnurekey>, Dana <disabaev>"
+LABEL version="1.0"
+LABEL description="ASCII Art Generator web application in Go"
+
 
 # Устанавливаем bash, если нужен shell-доступ
 RUN apk add --no-cache bash libc6-compat ca-certificates
@@ -23,3 +27,4 @@ COPY banners /app/banners
 
 EXPOSE 7777
 CMD ["./main"]
+
