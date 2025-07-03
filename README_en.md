@@ -1,16 +1,6 @@
 # 🖼️ ASCII Art Web Application
 
-`ascii-art-web` is a Go-based web application that allows users to generate ASCII art from text through a user-friendly graphical interface in a web browser. The application supports banner selection (`standard`, `shadow`, `thinkertoy`) and provides a stylized, responsive web page with detailed feedback. The implementation follows best practices in Go and web design.
-
----
-
-## 👤 Authors
-
-- **Baktiyar Zhaksybay** [`#bzhaksyb`](https://github.com/Baktiyar88)
-- **Dana Isabaeva** [`#disabaev`](https://github.com/)
-- **Bek Nurekeyev** [`#bnurekey`](https://github.com/)
-
----
+`ascii-art-web` is an extended version of the original `ascii-art` project, which generates ASCII art in the terminal. This version is a Go-based web application that allows users to generate ASCII art from text through a user-friendly graphical interface in a web browser. Users can select banner styles (`standard`, `shadow`, `thinkertoy`) and view the results on a responsive, stylized webpage. The implementation follows best practices in Go development and modern web design.
 
 ## 🧩 Features
 
@@ -155,30 +145,3 @@ Hello
   ```
 - **Security**: Runs as non-root user
 - **Small final image**: only binary and essential files
-
----
-
-## 💡 Best Practices
-
-- ✅ Clean, modular code
-- ✅ Follows Go naming and style conventions
-- ✅ Responsive design for all devices
-- ✅ Uses only standard library
-- ✅ User feedback and validation
-
----
-
-## 📚 Learning Outcomes
-
-- Go + HTML templates
-- HTTP server and form handling in Go
-- CSS basics and responsive design
-- Web app structure in Go
-- Docker: multi-stage builds and containerization
-- Secure user input processing
-
----
-
-## 📄 License
-
-MIT License
