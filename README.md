@@ -139,7 +139,7 @@ Hello
 - **Multi-stage build**: `golang:1.24.2` for building, `alpine` for runtime
 - Metadata included:
   ```Dockerfile
-  LABEL maintainer="Baktiyar <bzhaksyb>, Bek <bnurekey>, Dana <disabaev>"
+  LABEL maintainer="Baktiyar <bzhaksyb>"
   LABEL version="1.0"
   LABEL description="ASCII Art Generator web application in Go"
   ```
