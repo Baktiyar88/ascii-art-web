@@ -2,6 +2,9 @@
 
 `ascii-art-web` is an extended version of the original `ascii-art` project, which generates ASCII art in the terminal. This version is a Go-based web application that allows users to generate ASCII art from text through a user-friendly graphical interface in a web browser. Users can select banner styles (`standard`, `shadow`, `thinkertoy`) and view the results on a responsive, stylized webpage. The implementation follows best practices in Go development and modern web design.
 
+<img width="1916" height="920" alt="image" src="https://github.com/user-attachments/assets/2166cb46-0528-49b7-bf0e-8e58e6d33a82" />
+<img width="1915" height="912" alt="image" src="https://github.com/user-attachments/assets/6dffb724-550f-49e0-9d97-4206a431600b" />
+
 ## 🧩 Features
 
 - 💻 Web interface with HTML/CSS
